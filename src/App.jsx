@@ -1,8 +1,9 @@
 import { useState } from 'react'
-import Header from './Components/Header'
-import Hero from './Components/Hero'
-import Companies from './Components/Companies'
-import CourseCard from './Components/CourseCard'
+import Header from './Components/Header';
+import Hero from './Components/Hero';
+import Companies from './Components/Companies';
+import CourseCard from './Components/courseCard';
+import Footer from './Components/Footer';
 import SignIn from './Components/SignIn'
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       <Hero/>
       <Companies/>
       <CourseCard/>
-      {/* <SignIn /> */}
+      < Footer/>
     </>
   )
 }
