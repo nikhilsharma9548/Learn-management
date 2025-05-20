@@ -5,7 +5,7 @@ import { PiDotsThreeOutlineVerticalBold } from "react-icons/pi";
 import { Link } from 'react-scroll';
 
 
-
+  
 
 const Header = () => { 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -43,7 +43,7 @@ const Header = () => {
       </div>
         {/* mobile veiw */}
 
-        <div id='menu' className='md:hidden flex relative bottom-8 justify-end'>
+        <div id='menu' className='h-0 md:hidden flex relative bottom-8 justify-end'>
           <PiDotsThreeOutlineVerticalBold className='text-3xl cursor-pointer flex justify-center item-center ' onClick={toggleMenu} />
         </div>
 
