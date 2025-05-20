@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from "react";
-import img from '../assets/Images/padho.png';
+import img from '../assets/Images/Padho.png';
 import { PiDotsThreeOutlineVerticalBold } from "react-icons/pi";
 import { Link } from 'react-scroll';
-import courseCard from './courseCard';
+
 
 
 
