@@ -13,17 +13,17 @@ const CourseCard = () => {
         
         {courses.map((course, index) => (
           <Link
-          to={'/courses/' + course.id}
+          to={'/courses/' +course.id}
           key={index}
            className='flex flex-col hover:cursor-pointer w-72 h-72 bg-white shadow-lg rounded-lg border-1 border-gray-400'>
             <img src={course.image} alt={course.title} className='w-full  object-cover rounded-t-lg' />
           
             <div className='p-3 flex-col ' >
-            <h3 className=' font-bold pb-2'>{course.title}</h3>
-            <p className='text-sm'>{course.description}</p>
-           <div className='flex justify-between items-center mt-3'>
-             <p className='text-sm'>{course.stars}</p>
-            <p className='text-xl'>{course.price}</p>
+            <h3 className=' font-semibold'>{course.title}</h3>
+            <h2 className='text-gray-800/80 text-sm'>{course.educator}</h2>
+           <div className=' justify-between items-center mt-3'>
+              <p className='text-sm'>{course.stars}</p>
+              <p className='pl-2'>{course.price}</p>
            </div>
             </div>
           </Link>

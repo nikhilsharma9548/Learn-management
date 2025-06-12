@@ -1,5 +1,8 @@
 import React from 'react';
 import Dummy1 from './Images/dommyCourses-1.jpg';
+import Dummy2 from './Images/dummyCourse-2.png';
+import Dummy3 from './Images/dummyCourse-3.png';
+import Dummy4 from './Images/dummyCourse-4.png';
 import profile_img_1 from './Images/profile_img_1.png';
 import profile_img_2 from './Images/profile_img_2.png'; 
 import profile_img_3 from './Images/profile_img_3.png';
@@ -25,6 +28,9 @@ export const assets = {
     Wipro,
     Student,
     Dummy1,
+    Dummy2,
+    Dummy3,
+    Dummy4,
     profile_img_1,
     profile_img_2,
     profile_img_3,
@@ -55,34 +61,34 @@ export const courses = [
         {
     "id": 1,
     "title": "Javascript for Beginners", 
-    "description": "Learn the basics of JavaScript, the language of the web.",
+    "educator":"Apna College",
     "price": "$20",
-    "stars": "⭐⭐⭐⭐⭐",
+    "stars": "⭐⭐⭐⭐",
     "image": assets.Dummy1,
         },
         {
     "id": 2,
-    "title": "React for Beginners",             
-    "description": "Build interactive user interfaces with React.",
+    "title": "React for Beginners", 
+    "educator":"Code Aur Chai",            
     "price": "$30",
-    "stars": "⭐⭐⭐⭐⭐",
-    "image": "img2",
+    "stars": "⭐⭐⭐",
+    "image": assets.Dummy2,
         },
         {
     "id": 3,
-    "title": "Node.js for Beginners",       
-    "description": "Learn server-side programming with Node.js.",
+    "title": "Git and GitHub",       
+    "educator":"Apna College",
     "price": "$25", 
     "stars": "⭐⭐⭐⭐⭐",
-    "image": "img3",
+    "image": assets.Dummy3,
         },
         {
     "id": 4,
-    "title": "Python for Beginners",        
-    "description": "Get started with Python, a versatile programming language.",
+    "title": "API handling in React",
+    "educator":"Coude Aur Chai",        
     "price": "$15",
-    "stars": "⭐⭐⭐⭐⭐",
-    "image": "img4",    
+    "stars": "⭐⭐⭐⭐",
+    "image": assets.Dummy4,    
         },
 ];
 

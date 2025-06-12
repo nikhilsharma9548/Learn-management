@@ -26,11 +26,8 @@ function App() {
             </>
           } 
         />
-        <Route path="/courses/id" element={<>
-          <Header />
-          <Courses />
-          <Footer />
-        </>} />
+        <Route path='/courses/:id' element={<Courses />} />
+      
       </Routes>
 
       
