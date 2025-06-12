@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from "react";
-import img from '../assets/Images/Padho.png';
+import { assets } from '../assets/assets';
 import { PiDotsThreeOutlineVerticalBold } from "react-icons/pi";
 import { Link } from 'react-scroll';
 
@@ -16,17 +16,17 @@ const Header = () => {
   const navItems = [
     { name: "Home", link: "Home" },
     { name: "About", link: "About" },
-    { name: "Courses", link: "Courses" },
+    { name: "Courses", link: "CourseCard" },
     { name: "Contact", link: "Contact" },
   ];
 
   return (
     <header className=' md:flex justify-between shadow-xl bg-[#95a8dd] items-center overflow-hidden fixed top-0 w-full text-black '> 
-      <div className='object-cover h-18 w-24 flex items-center justify-center md:ml-20 md:pl-0 pl-5 md:pt-0 pt-10'>
-        <img src={img} />
+      <div className='object-cover h-18 w-24 flex items-center justify-center md:ml-14 md:pl-0 pl-5  pt-10 pb-10'>
+        <img src={assets.Padho} />
       </div>
 
-      <div className='hidden md:flex justify-between gap-10 items-center w-[30%] px-5 cursor-pointer hover:'>
+      <div className='hidden md:flex justify-between gap-10 items-center w-auto  px-14 cursor-pointer '>
         {navItems.map((item, i) => (
           <Link
           key={i}
@@ -43,7 +43,7 @@ const Header = () => {
       </div>
         {/* mobile veiw */}
 
-        <div id='menu' className='h-0 md:hidden flex relative bottom-8 justify-end'>
+        <div id='menu' className='h-0 md:hidden flex relative  justify-end items-end bottom-5 w-full px-4 '>
           <PiDotsThreeOutlineVerticalBold className='text-3xl cursor-pointer flex justify-center item-center ' onClick={toggleMenu} />
         </div>
 
@@ -75,7 +75,7 @@ const Header = () => {
                     ))}
 
           </div>
-        )};
+        )}
 
     </header>
   )

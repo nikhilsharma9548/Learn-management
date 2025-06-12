@@ -1,23 +1,41 @@
-import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom';
+import './index.css'
+
 import Header from './Components/Header';
 import Hero from './Components/Hero';
 import Companies from './Components/Companies';
-import CourseCard from './Components/courseCard';
+import Courses from './Components/Courses';
+import CourseCard from './Components/CourseCard';
+import Testimonials from './Components/Testimonials';
 import Footer from './Components/Footer';
-import SignIn from './Components/SignIn'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <Header/>
-      <Hero/>
-      <Companies/>
-      <CourseCard/>
-      < Footer/>
-    </>
-  )
+    <div className="overflow-hidden">
+      <Routes>
+        <Route 
+          path="/" 
+          element={
+            <>
+              <Header />
+              <Hero />
+              <Companies />
+              <CourseCard />
+              <Testimonials />
+              <Footer />
+            </>
+          } 
+        />
+        <Route path="/courses/id" element={<>
+          <Header />
+          <Courses />
+          <Footer />
+        </>} />
+      </Routes>
+
+      
+    </div>
+  );
 }
 
-export default App
+export default App;
