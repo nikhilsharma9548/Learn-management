@@ -11,7 +11,7 @@ import Padho from './Images/Padho.png';
 import Padho2 from './Images/Padho2.png';
 import Tcs from './Images/TCS.png';
 import Wipro from './Images/Wipro.png';
-import Adobe from './Images/Adobe.png';
+import Adobe from './Images/adobe.png';
 import Student from './Images/student-1.jpg';
 
 export const assets = {
