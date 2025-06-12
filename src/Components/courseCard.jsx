@@ -5,7 +5,7 @@ import { courses } from '../assets/assets';
 const CourseCard = () => {
 
   return (
-    <section id='Coursecard' className='pt-18 bg-gradient-to-r from-[#f0f4f8] to-[#95a8dd]'>
+    <section id='CourseCard' className='pt-18 bg-gradient-to-r from-[#f0f4f8] to-[#95a8dd]'>
       <h1 className='text-4xl font-bold text-center'>Our Courses</h1>
 
       <p className='text-center'>Explore our wide range of courses designed to help you succeed.</p>
