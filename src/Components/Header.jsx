@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useState } from "react";
+import { AppContext } from '../Context/AppContext';
 import { assets } from '../assets/assets';
 import { PiDotsThreeOutlineVerticalBold } from "react-icons/pi";
 import { Link } from 'react-scroll';
@@ -8,6 +9,7 @@ import { Link } from 'react-scroll';
   
 
 const Header = () => { 
+  const {navigate} = useContext(AppContext);
   const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -23,7 +25,12 @@ const Header = () => {
   return (
     <header className=' md:flex justify-between shadow-xl bg-[#95a8dd] items-center overflow-hidden fixed top-0 w-full text-black '> 
       <div className='object-cover h-18 w-24 flex items-center justify-center md:ml-14 md:pl-0 pl-5  pt-10 pb-10'>
-        <img src={assets.Padho} />
+        <img src={assets.Padho}
+        onClick={()=>
+        {
+          navigate('/')
+        }
+        } />
       </div>
 
       <div className='hidden md:flex justify-between gap-10 items-center w-auto  px-14 cursor-pointer '>

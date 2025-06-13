@@ -2,16 +2,17 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 
-const Courses = () => {
+const CourseDetails = () => {
   return (
     <div>
-      <Header/>
+      <Header />
+      
      <div className='h-screen'>
-          <h1>hello </h1>
+          <h1>CourseDetails </h1>
      </div>
-     <Footer/>
+     
     </div>
   )
 }
 
-export default Courses
+export default CourseDetails

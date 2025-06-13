@@ -90,6 +90,22 @@ export const courses = [
     "stars": "⭐⭐⭐⭐",
     "image": assets.Dummy4,    
         },
+                {
+    "id": 3,
+    "title": "Git and GitHub",       
+    "educator":"Apna College",
+    "price": "$25", 
+    "stars": "⭐⭐⭐⭐⭐",
+    "image": assets.Dummy3,
+        },
+        {
+    "id": 4,
+    "title": "API handling in React",
+    "educator":"Coude Aur Chai",        
+    "price": "$15",
+    "stars": "⭐⭐⭐⭐",
+    "image": assets.Dummy4,    
+        },
 ];
 
 export const dummyTestimonial = [

@@ -4,7 +4,7 @@ import { dummyTestimonial } from '../assets/assets';
 
 const Testimonials = () => {
   return (
-    <div className='pb-14  px-8 md:px-0 bg-gradient-to-r from-[#f0f4f8] to-[#95a8dd] flex flex-col items-center space-y-7 text-center'>
+    <div className='pb-14 pt-20 px-8 md:px-0 bg-gradient-to-r from-[#f0f4f8] to-[#95a8dd] flex flex-col items-center space-y-7 text-center'>
         <h2 className='text-3xl font-medium '>Testimonials</h2>
         <p className='md:text-base text-gray-700 mt-3'>Hear from our learners as they share their journeys of transformation, success, <br />and how our
             platform has made a difference in their lives.</p>

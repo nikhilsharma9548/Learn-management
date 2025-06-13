@@ -4,32 +4,36 @@ import './index.css'
 import Header from './Components/Header';
 import Hero from './Components/Hero';
 import Companies from './Components/Companies';
-import Courses from './Components/Courses';
+import CourseDetails from './Components/CourseDetails';
 import CourseCard from './Components/CourseCard';
 import Testimonials from './Components/Testimonials';
 import Footer from './Components/Footer';
+import CourseList from './Components/Course-List';
 
 function App() {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden text-default min-h-screen ">
+     < Header />
       <Routes>
         <Route 
           path="/" 
           element={
             <>
-              <Header />
               <Hero />
               <Companies />
               <CourseCard />
               <Testimonials />
-              <Footer />
             </>
-          } 
-        />
-        <Route path='/courses/:id' element={<Courses />} />
+          }/>
+        {/* <Route path='/course-list' element={<CourseList />} /> */}
+          <Route path='/course-list' element={<CourseList />} />
+        <Route path='/course-list/:input' element={<CourseList />} />
+        
+
+        <Route path='/course/:id' element={<CourseDetails/>} />
       
       </Routes>
-
+        <Footer />
       
     </div>
   );
