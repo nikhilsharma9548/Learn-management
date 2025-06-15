@@ -23,7 +23,7 @@ const Header = () => {
   ];
 
   return (
-    <header className=' md:flex justify-between shadow-xl bg-[#95a8dd] items-center overflow-hidden fixed top-0 w-full text-black '> 
+    <header className='z-50 md:flex justify-between shadow-xl bg-[#95a8dd] items-center overflow-hidden fixed  left-0 top-0 w-full text-black '> 
       <div className='object-cover h-18 w-24 flex items-center justify-center md:ml-14 md:pl-0 pl-5  pt-10 pb-10'>
         <img src={assets.Padho}
         onClick={()=>

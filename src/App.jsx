@@ -25,7 +25,7 @@ function App() {
               <Testimonials />
             </>
           }/>
-        {/* <Route path='/course-list' element={<CourseList />} /> */}
+  
           <Route path='/course-list' element={<CourseList />} />
         <Route path='/course-list/:input' element={<CourseList />} />
         
@@ -33,8 +33,8 @@ function App() {
         <Route path='/course/:id' element={<CourseDetails/>} />
       
       </Routes>
-        <Footer />
       
+      <Footer />
     </div>
   );
 }

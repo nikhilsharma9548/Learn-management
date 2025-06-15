@@ -16,7 +16,7 @@ const CourseCard = () => {
      <div className='flex md:px-32 px-8 pt-20 text-left  bg-gradient-to-r from-[#f0f4f8] to-[#95a8dd]'>
       <SearchBar />
      </div>
-      <div className='flex flex-wrap justify-center items-center gap-10 p-10'>     
+      <div className='flex flex-wrap justify-center items-center gap-10 pt-10 pb-5'>     
         {courses.slice(0,4).map((course, index) => (
           <Link
           to={'/course/' +course.id}
@@ -37,9 +37,9 @@ const CourseCard = () => {
           </Link>
         ))}
       </div>
-      <div className='flex w-[90vw] justify-end items-center pt-5'>
+      <div className='flex w-[90vw]  justify-end items-center'>
         <Link to={'/course-list'} onClick={()=> scrollTo(0,0)}
-      className= ' border bg-blue-600/80 hover:bg-blue-700 border-gray-500/30 px-4 py-2.5 rounded'>See All</Link>
+      className= ' border text-sm bg-blue-600/80 hover:bg-blue-700 border-gray-500/30 px-2 py-1 rounded '>See All</Link>
       </div>
     </section>
   )

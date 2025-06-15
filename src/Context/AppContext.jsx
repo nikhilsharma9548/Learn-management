@@ -6,6 +6,8 @@ export const AppContext = createContext()
 
 export const AppContextProvider = (props)=>{
 
+    
+
     const navigate =useNavigate()
 
     const [allCourses, setallCourses] = useState([])
@@ -21,6 +23,9 @@ export const AppContextProvider = (props)=>{
             allCourses,
             navigate,
      }
+
+     //function to calculate Course Chapter TIme
+
     return (
         <AppContext.Provider value={value}>
             {props.children}

@@ -15,7 +15,7 @@ const SearchBar = ({data}) => {
   return (
        <form
      onSubmit={onSearchHandler} 
-     className= 'flex items-center sm:w-[60vw] lg:w-[35vw] h-12 bg-white border border-gray-500/20 rounded'> 
+     className= 'flex items-center w-[90vw] sm:w-[60vw] lg:w-[35vw] h-12 bg-white border border-gray-500/20 rounded'> 
        <p className='md:w-auto w-10 px-3'><CiSearch /></p> 
 
        <input
@@ -24,7 +24,7 @@ const SearchBar = ({data}) => {
         type='text'   placeholder='Search for courses' className='w-full h-full outline-none text-gray-500/80' />
 
        <button type='submit'
-       className='bg-blue-600 rounded text-white sm:px-10 px-1 md:py-2 py-2 mx-1'>Search</button>
+       className='bg-blue-600 rounded text-white sm:px-10 px-4 md:py-2 py-2 mx-1'>Search</button>
 
    </form>
     
